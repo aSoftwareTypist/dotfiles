@@ -1,0 +1,73 @@
+
+sudo dnf config-manager --enable fedora-cisco-openh264
+
+#Automount drives through fstab
+cd /run/media/
+sudo mkdir Extras Hard\ Drive Work
+kwrite /etc/fstab
+
+#write in fstab file:
+#Extras
+UUID=315F52AB66348327 /run/media/Extras ntfs,nofail uid=1000,gid=1000,umask=022 1 2
+#Hard Drive
+UUID=071A2A6310E27B0F /run/media/Hard\040Drive ntfs,nofail uid=1000,gid=1000,umask=022 1 2
+#Work
+UUID=4533ECE359E86688 /run/media/Work ntfs,nofail uid=1000,gid=1000,umask=022 1 2
+
+#after kwrite exit:
+sudo systemctl daemon-reload
+ sudo mount -a
+
+ ########################## you can copy whole from here #######################
+
+#Add Preload repo
+sudo dnf5 copr enable elxreno/preload -y
+
+
+#update
+sudo dnf5 --refresh update -y && flatpak update -y
+sudo dnf5 group update core -y
+
+
+
+# Install x11
+#sudo dnf5 install plasma-workspace-x11 kwin-x11 -y
+
+
+#Install Different apps:
+sudo dnf5 install --allowerasing --skip-unavailable -y bleachbit dnfdragora preload smplayer playerctl brightnessctl mpv vlc megasync dolphin-megasync clementine qbittorrent libheif-freeworld lingot kclock kdenlive lollypop
+
+#Delete unused apps
+sudo dnf5 remove -y akregator kmail ibus-libzhuyin neochat
+
+# MS Fonts
+sudo dnf5 install curl cabextract xorg-x11-font-utils fontconfig
+sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+
+############################ upto here ################################
+
+# Better Fonts:
+# sudo dnf5 copr enable dawid/better_fonts -y
+# sudo dnf5 install fontconfig-font-replacements -y
+# sudo dnf5 install fontconfig-enhanced-defaults -y
+
+
+#Install virtual box
+sudo dnf5 install @development-tools kernel-headers kernel-devel dkms -y
+sudo dnf5 install akmod-VirtualBox kernel-devel-$(uname -r) -y
+sudo nano /etc/yum.repos.d/virtualbox.repo
+
+# add in the file for repo
+[virtualbox]
+name=Fedora $releasever - $basearch - VirtualBox
+baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://www.virtualbox.org/download/oracle_vbox_2016.asc
+
+sudo dnf5 install VirtualBox -y
+sudo usermod -a -G vboxusers $USER
+groups $USER
+sudo akmods; systemctl restart vboxdrv.service
+
