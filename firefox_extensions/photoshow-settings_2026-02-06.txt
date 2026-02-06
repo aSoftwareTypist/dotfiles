@@ -1,0 +1,24 @@
+------------------- PHOTOSHOW SETTINGS BEGIN -------------------
+- EXPORTED AT:    2026-02-06T09:09:54.625Z
+- VERSION:        1.6.0.0
+- SOURCE:         PhotoShow 4.86.1
+- BROWSER:        Firefox 147.0
+- PLATFORM:       Linux x86_64
+----------------------------------------------------------------
+7CQDRPTOKzSuKPAfZk8BwkKme4lGzo+WQbC18Hytom9sOGVOMwa0tPPqm5pwnlas
+8dk4dOe0QAXg17Ni4bauTgcXV7rpmC674fc1bUoZoZPBEsYC5H/AByIwe+BZnmfx
+/8NLEdbn0e4RgB45jnBa35Gutkpk1hl97Z3xBxMYHG6tB5w9UxEctuv7TyVCuEwd
+jCFyO/+G509R+00c5SJkxERLYR3WZOaPiFe8ZRChZY79s3PYwqpuR82ykeHJhuCE
+EbXYrGWCiUfpPyN2J4xy/dvEqFQj8rQTCzREcqvRObugI9WCRS3fSgc21om1I+mG
+gdH45xC+4KxJsnnInbxRJB6gG+wA7LIv3XNnbOoKQBHxBb5w+/HBvmdH9diSyEC5
+4vLSBklNFL9PsUp7L/bWqDoDe3uFJdMRZswtN34W5IkjZSgExvI/ENPdIM0R5LWf
+3byYj1TxJu5Kj2OmHfYq8hMFeZFRn/ZcefyiT0KtQAeaMwdF/z5sLZ3QvYhYURPK
+rKutMbKMcAphv/tIaiD+Qo1g6uABJOBx+UHsbvee4PKP+rNyvQSxVRsvoOd0zLoV
+n3OmL8RUOOjbBj1ohoKZBjClwOM7eTCWmYFjfCkp8BjjrbJwkMIzvr4b5+XIsasH
+GzEyZsPZX49i1PC2UcKm+l0iwjFxAU7iS/fYEYtp6hY82QeB6NvbC0AokJviJ2M9
+AU8JP31X3BalyghfVhJHFasTTnJ1R7HOTqKa3bGmQ1CMN4Z0NCrCphUre3AFzYNz
+jZxxX2vx6E9b6UZwAYgEVrb+MZaCxdDAAp1/ZktdmhosQoeX2AH4Xsrj2HhrV5R/
+a2K7Gs9nOBX5Due6FBamjKhV6gaw+mMA/PMUCzAtcu4X+R7CD54xGEBGKKLBpepX
+YWauDwZATGxP9CxB93bC45NkCmvjE89vtjmQQt1eAcnEF7anAtOTDfOtPn5qquCh
++aSAo2BhwTyZmjfM9w==
+-------------------- PHOTOSHOW SETTINGS END --------------------
